@@ -9,8 +9,6 @@ def reverse_linked_list(node):
     return node
 
 class Node:
- 
-    # Constructor to initialize the node object
     def __init__(self, data):
         self.data = data
         self.next = None
@@ -20,7 +18,7 @@ b = Node('B')
 c = Node('C')
 a.next = b
 b.next = c
-print(reverse_linked_list(a))
+reverse_linked_list(a)
 print(b.next.data)
 print(c.next.data)
 
